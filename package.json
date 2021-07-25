@@ -1,24 +1,17 @@
 {
-  "name": "hello-node",
+  "name": "data-siswa-management",
   "version": "0.0.1",
-  "description": "A simple Node app built on fastify, instantly up and running.",
+  "description": "Simple data siswa management based on Fastify and JSON",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "fastify": "^3.14.1"
+    "fastify": "^3.19.2",
+    "uuid": "^8.3.2"
   },
   "engines": {
     "node": "12.x"
   },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-hello-node"
-  },
-  "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+  "license": "MIT"
 }
