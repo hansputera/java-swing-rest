@@ -24,6 +24,7 @@ app.get("/", (req, reply) => {
 
 app.post("/siswa", {
   preHandler: (req, reply, next) => {
+    console.log(req.body);
     const username = req.body.username;
     const password = req.body.password;
     const fullName = req.body.full_name;
