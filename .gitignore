@@ -2,3 +2,5 @@
 .node-gyp
 node_modules
 watch.json
+shrinkwrap.yaml
+package-lock.json
