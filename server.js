@@ -9,6 +9,7 @@ const { v4: uuidv4 } = require("uuid");
 const storage = new Cruds("data-siswa");
 
 app.addContentTypeParser('application/json', { parseAs: 'string' }, function (req, body, done) {
+  console.log(req.body);
   try {
     const json = JSON.parse(body);
     done(null, json);
@@ -24,7 +25,6 @@ app.get("/", (req, reply) => {
 
 app.post("/siswa", {
   preHandler: (req, reply, next) => {
-    console.log(req.body);
     const username = req.body.username;
     const password = req.body.password;
     const fullName = req.body.full_name;
