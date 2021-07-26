@@ -9,7 +9,6 @@ const { v4: uuidv4 } = require("uuid");
 const storage = new Cruds("data-siswa");
 
 app.addContentTypeParser('application/json', { parseAs: 'string' }, function (req, body, done) {
-  console.log(req.body);
   try {
     const json = JSON.parse(body);
     done(null, json);
